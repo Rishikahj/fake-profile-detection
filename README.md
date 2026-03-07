@@ -1,5 +1,7 @@
 # Fake Profile Detection System – ML-Based Social Media Analysis
 
+Live Demo: https://fake-profile-detection-huv4.onrender.com
+
 ## Project Overview
 
 This project detects potentially fake social media profiles using machine learning and behavioral analysis. The system analyzes profile characteristics such as followers, following count, posting activity, profile completeness, and bio information to classify accounts as **Real** or **Fake**.
