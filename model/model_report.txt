@@ -1,0 +1,20 @@
+Model Accuracy:
+1.0
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         3
+           1       1.00      1.00      1.00         1
+
+    accuracy                           1.00         4
+   macro avg       1.00      1.00      1.00         4
+weighted avg       1.00      1.00      1.00         4
+
+Feature Importance:
+followers: 0.141
+following: 0.162
+posts: 0.141
+bio_length: 0.141
+profile_picture: 0.212
+username_length: 0.202

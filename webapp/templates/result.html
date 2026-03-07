@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Prediction Result</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0;
+}
+
+.container{
+background:white;
+padding:35px;
+border-radius:12px;
+width:420px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.result{
+font-size:24px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.fake{
+color:red;
+}
+
+.real{
+color:green;
+}
+
+.bar{
+width:100%;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress{
+height:18px;
+background:#4facfe;
+text-align:center;
+color:white;
+font-size:12px;
+}
+
+button{
+margin-top:20px;
+padding:10px;
+background:#4facfe;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+}
+
+button:hover{
+background:#2f80ed;
+}
+
+ul{
+text-align:left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Profile Analysis Result</h2>
+
+<div class="result
+{% if result == 'Fake Profile' %}
+fake
+{% else %}
+real
+{% endif %}
+">
+
+{{ result }}
+
+</div>
+
+<p><b>Model Accuracy:</b> {{ accuracy }}</p>
+
+<p><b>Confidence:</b> {{ confidence }}%</p>
+
+<div class="bar">
+<div class="progress" style="width: {{ confidence }}%">
+{{ confidence }}%
+</div>
+</div>
+
+<p><b>Risk Level:</b> {{ risk }}</p>
+
+<h4>Possible Reasons</h4>
+
+<ul>
+{% for r in reasons %}
+<li>{{ r }}</li>
+{% endfor %}
+</ul>
+
+<a href="/">
+<button>Analyze Another Profile</button>
+</a>
+
+</div>
+
+</body>
+</html>
+
