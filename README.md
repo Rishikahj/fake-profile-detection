@@ -1,5 +1,9 @@
 # Fake Profile Detection System – ML-Based Social Media Analysis
 
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Flask](https://img.shields.io/badge/Flask-2.0-green)
+![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-orange)
+
 Live Demo: https://fake-profile-detection-huv4.onrender.com
 
 ## Project Overview
@@ -35,6 +39,12 @@ The application also provides **confidence score, risk level, and behavioral exp
 ## Machine Learning Model
 
 The system uses a **Random Forest Classifier** to detect fake profiles based on behavioral features.
+
+### Model Performance
+> Note: Model achieves 100% accuracy on the current simulated dataset. 
+> This is due to the small dataset size. Real-world accuracy would vary 
+> with larger and more diverse datasets. Future scope includes using 
+> real social media API data for better generalization.
 
 ### Features Used
 
@@ -121,6 +131,10 @@ http://127.0.0.1:5000
 • The system currently uses simulated profile data rather than real-time social media APIs.
 • Predictions indicate suspicious behavior patterns but do not guarantee that an account is fake.
 
----
-Live Demo: https://fake-profile-detection-huv4.onrender.com
+## What I Learned
+Through this project I learned how to build and train a machine learning 
+model using Scikit-learn, create a Flask web application with Python, 
+perform data analysis using Pandas and NumPy, and deploy a Python 
+application on Render.
+
 
